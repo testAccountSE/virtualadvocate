@@ -1,0 +1,4 @@
+.DS_Store
+backend/services/__pycache__/aiIpcPredictor.cpython-314.pyc
+backend/services/__pycache__/ipcDatabase.cpython-314.pyc
+backend/.env
