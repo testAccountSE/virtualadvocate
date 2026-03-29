@@ -4,7 +4,7 @@ import torch
 from services.gemini_service import generate_reply
 
 # CONFIGURATION
-USE_NLLB = False   # Keep NLLB code but disable it
+USE_NLLB = False   #NLLB DISABLED FOR HOSTING
 
 MODEL_NAME = "facebook/nllb-200-distilled-600M"
 

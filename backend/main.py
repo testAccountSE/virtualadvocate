@@ -53,10 +53,10 @@ def gemini_chat(data: ChatRequest):
     Gemini chatbot endpoint
 
     Features:
-    - conversation memory
-    - structured legal responses
-    - greeting conversation
-    - language mirroring
+    1. Conversation memory
+    2. Structured legal responses
+    3. Greeting conversation
+    4. Language mirroring
     """
 
     try:
@@ -126,11 +126,11 @@ def analyze(request: SearchRequest):
     Unified analysis endpoint
 
     Steps:
-    1️⃣ Translate user query to English
-    2️⃣ Run legal classification
-    3️⃣ Detect IPC/BNS sections
-    4️⃣ Generate legal guidance
-    5️⃣ Fetch related judgments
+    1. Translate user query to English
+    2. Run legal classification
+    3. Detect IPC/BNS sections
+    4. Generate legal guidance
+    5. Fetch related judgments
     """
 
     print("STEP 1: request received")
