@@ -191,7 +191,7 @@ export default function Home() {
     try {
 
       const response = await fetch(
-        "https://virtualadvocate-production.up.railway.app/analyze",
+        "https://virtualadvocate-production-9dd5.up.railway.app/analyze",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

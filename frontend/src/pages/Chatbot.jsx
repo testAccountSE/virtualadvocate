@@ -190,7 +190,7 @@ export default function Chatbot() {
     ) {
       try {
         const res = await fetch(
-          "https://virtualadvocate-production.up.railway.app/generate-title",
+          "https://virtualadvocate-production-9dd5.up.railway.app/generate-title",
           {
             method: "POST",
             headers: {
@@ -217,7 +217,7 @@ export default function Chatbot() {
 
     try {
       const response = await fetch(
-        "https://virtualadvocate-production.up.railway.app/chat",
+        "https://virtualadvocate-production-9dd5.up.railway.app/chat",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
