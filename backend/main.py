@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import re
@@ -44,10 +44,6 @@ class UserSignUp(BaseModel):
 class UserLogin(BaseModel):
     email: str
     password: str
-
-class AdviceRequest(BaseModel):
-    case_type: str
-    description: str
 
 
 # CHAT ENDPOINT
@@ -191,21 +187,6 @@ def legal_search(request: SearchRequest):
             status_code=500,
             detail="Error fetching judgments"
         )
-
-# FILE UPLOAD
-@app.post("/submit-for-advice")
-async def submit_advice(
-    case_type: str,
-    description: str,
-    file: UploadFile = File(None)
-):
-
-    return {
-        "status": "success",
-        "case_type": case_type,
-        "description": description,
-        "file_received": file.filename if file else "No file uploaded"
-    }
 
 # AUTH ENDPOINTS
 @app.post("/signup")
